@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+; Menu parent pour tous les fichiers
+[HKEY_CLASSES_ROOT\*\shell\ScriptPython]
+"MUIVerb"="Script Python"
+"SubCommands"="SuppMDPPDF;AjoutMDPPDF"
+
+; Sous-commande 1 dans le CommandStore
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\SuppMDPPDF]
+@="Supp MDP PDF"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\SuppMDPPDF\command]
+@="\"py\" \"C:\\ScriptPython\\PDF_MDP\\SuppMDP_PDF.py\" \"%1\""
+
+; Sous-commande 2 dans le CommandStore
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\AjoutMDPPDF]
+@="Ajout MDP PDF"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\AjoutMDPPDF\command]
+@="\"py\" \"C:\\ScriptPython\\PDF_MDP\\AjoutMDP_PDF.py\" \"%1\""

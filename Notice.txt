@@ -1,0 +1,10 @@
+Il convient de coller le dossier complet directement sur le Disque "C:\".
+
+Ensuite, il convient d'installer Python version 3.12 via python.org
+Python doit être installer dans "C:\Program Files\Python312" de telle sorte à avoir "C:\Program Files\Python312\python.exe"
+
+Ensuite, il convient d'installer la bibliothèque "PyMuPDF" via la commande : "cmd" => "pip install PyMuPDF"
+
+Ensuite, il convient de fusionner le fichier "Ajout Registre.reg" via clic droit, "fusionner".
+
+Il est désormais possible d'accéder aux commandes "Supp MDP PDF" et Ajout MDP PDF" depuis le clic droit
